@@ -23,7 +23,7 @@ exports.createActivity = async (req, res) => {
             message: 'Actividad creada exitosamente',
             data: savedActivity
         };
-        res.status(201).json(response); // Agrega el código de estado HTTP 201 (Created)
+        res.status(201).json(response); // Agrega el código de estado HTTP 201 (Created)J
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Error en el servidor' });
