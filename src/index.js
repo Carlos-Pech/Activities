@@ -16,6 +16,11 @@ mongoose.connect(process.env.MONGODB_URI ,{useNewUrlParser:true, useUnifiedTopol
 
 
 const PORT = process.env.PORT || 3050;
+var corsOptions ={
+    origin:'*',
+    optionsSuccessStatus:200
+}
+app.use(cors(corsOptions))
 
 app.use(bodyParser.json()); // Agregar body-parser
 
