@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3050;
     origin:'*',
     optionsSuccessStatus:200
 }
-app.use(cors(corsOptions))
+// app.use(cors(corsOptions))
 
 app.use(bodyParser.json()); // Agregar body-parser
 
