@@ -6,7 +6,7 @@ require ("dotenv").config();
 const app = express();
 const ActivityRoute = require('./Routes/activities.routes');
 
-app.use(cors())
+// app.use(cors())
 
 
 
