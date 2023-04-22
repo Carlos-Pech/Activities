@@ -1,9 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors')
 const bodyParser = require('body-parser'); // Agregar body-parser
 require ("dotenv").config();
 const app = express();
 const ActivityRoute = require('./Routes/activities.routes');
+
+app.use(cors())
+
+
 
 mongoose.connect(process.env.MONGODB_URI ,{useNewUrlParser:true, useUnifiedTopology:true})
 .then(()=>console.log('Database connection established'))
