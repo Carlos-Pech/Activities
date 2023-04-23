@@ -6,11 +6,11 @@ require ("dotenv").config();
 const app = express();
 const ActivityRoute = require('./Routes/activities.routes');
 
-// app.use(cors())
+app.use(cors())
 
 
 
-mongoose.connect(process.env.MONGODB_URI ,{useNewUrlParser:true, useUnifiedTopology:true})
+mongoose.connect('mongodb+srv://carlos:Monopolis19@dbcluster.khexvht.mongodb.net/Activities1?retryWrites=true&w=majority' ,{useNewUrlParser:true, useUnifiedTopology:true})
 .then(()=>console.log('Database connection established'))
 .catch((error)=>console.error(error));
 
