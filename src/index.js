@@ -7,6 +7,7 @@ const app = express();
 const ActivityRoute = require('./Routes/activities.routes');
 
 app.use(cors())
+//Prueba
 
 
 
