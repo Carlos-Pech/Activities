@@ -28,5 +28,6 @@ app.use(bodyParser.json()); // Agregar body-parser
 app.listen(PORT,()=>{
     console.log(`server is running on port http://localhost:${PORT}`);
 });
+console.log('API en producción: https://nodejs-api-activities.onrender.com/activities/')
 
 app.use('/activities', ActivityRoute);
